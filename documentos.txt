@@ -2,5 +2,5 @@
 
 INSERT INTO `docu_drpuno`.`reg_recep` (`id`, `n_reg`, `fecha_recep`, `tipo_doc`, `nombre_rem`, `n_folios`, `asunto`, `decreto`, `p_resp_at`, `obs`, `firma`, `anho`) VALUES (NULL, '223', '2015-09-02', 'comprobante de pago', 'tienda "la ferreteria"', '2', 'entrega boleta de venta', 'registrese', 'tesoreria', 'ninguna', 'director', '2015');
 
-
+dfgfdghdhfdfh
 ?>
