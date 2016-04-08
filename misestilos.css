@@ -1,0 +1,116 @@
+/*
+   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+table {
+	padding: 0.5px;
+	margin: 2;
+	font-family: Times new Roman; /*Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	font-size: 9pt;
+	color: blue;
+	background: white;
+	text-align: justify;
+	background-image: url(w3c_fondo.png);
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+input {
+	font-family: Arial Narrow;
+	font-size: 10pt;
+	height:23px;
+}
+
+body {
+	color: black;
+}
+
+ul {
+	margin-right: 30px
+}
+
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+
+a:link img, a:visited img { border-style: none } /* no border on img links */
+
+a img { color: white; }        /* trick to hide the border in Netscape 4 */
+@media all {                   /* hide the next rule from Netscape 4 */
+  a img { color: inherit; }    /* undo the color change above */
+}
+
+h1 {
+	text-align: center;
+	font: 200% Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: Olive;
+	background: transparent;
+}
+
+h2, h3, h4 { text-align: left }
+
+
+h2 {
+	font: 140% Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background: #C6C180;
+	color: white;
+	padding: 0.2em;
+}
+h3 { font: 110% sans-serif; color: #005A9C; background: transparent; margin-left: 20px }
+h4 { font: 100% sans-serif; font-weight: bolder }
+
+p {
+	margin: 15px 20px;
+}
+
+p.menu {
+	margin: 40px 0px;
+	text-align: center;
+}
+
+pre {margin-left: 60px;
+	 background: #FFF8DC;
+	 color: #000000;
+	 margin-right: 60px;
+	 padding: 10px;
+}
+code {
+	background: transparent;
+	color: #A07717;
+	font-weight: bold;
+}
+
+@media screen {  /* hide from IE3 */
+a[href]:hover { background: #ffa }
+.invisible { display:none; background: #fff; color: #fff; }
+
+h3.pausa {
+	background-color:#dcdcdc;
+}
+
+img { margin-bottom: 0.2em;
+}
+}
+
+@media aural {  
+  h1, h2, h3, h4 { stress: 20; richness: 90 }
+}
+
+div.figure {
+  text-align: center;
+  margin: 15px;
+}
+
+div.figure p, div.figure img {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.7em;
+  text-indent: 0;
+}
+
+p.image img {
+	border: 1px solid black
+}
