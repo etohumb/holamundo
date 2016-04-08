@@ -29,7 +29,7 @@
 	
 	// INICIA - CREAR TABLA
 	$sql = "UPDATE reg_recep SET decreto, p_resp_at, obs 
-	WHERE $n_reg=";
+	WHERE n_reg=" . $n_reg;
 	if (!$result = $mysqli->query($sql)){
 			// no se pudo insertar en la tabla
 	}
