@@ -6,17 +6,19 @@
 table {
 	padding: 0.5px;
 	margin: 2;
-	font-family: Times new Roman; /*Verdana, Geneva, Arial, Helvetica, sans-serif;*/
-	font-size: 9pt;
-	color: blue;
+	font-family: Arial;/*Times new Roman; /*Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	font-size: 5pt;
+	color: black;
 	background: white;
 	text-align: justify;
-	background-image: url(w3c_fondo.png);
-	background-attachment: fixed;
-	background-position: left;
-	background-repeat: no-repeat;
 }
 
+body {
+	font-family: Arial;
+	font-color: blue;
+}
+
+/*
 input {
 	font-family: Arial Narrow;
 	font-size: 10pt;
@@ -37,11 +39,12 @@ a:active { color: #C00; background: transparent }
 
 a:link img, a:visited img { border-style: none } /* no border on img links */
 
-a img { color: white; }        /* trick to hide the border in Netscape 4 */
-@media all {                   /* hide the next rule from Netscape 4 */
-  a img { color: inherit; }    /* undo the color change above */
-}
+/*a img { color: white; }        /* trick to hide the border in Netscape 4 */
+/*@media all {                   /* hide the next rule from Netscape 4 */
+/*  a img { color: inherit; }    /* undo the color change above */
+/*}*/
 
+/*
 h1 {
 	text-align: center;
 	font: 200% Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -84,6 +87,7 @@ code {
 }
 
 @media screen {  /* hide from IE3 */
+/*
 a[href]:hover { background: #ffa }
 .invisible { display:none; background: #fff; color: #fff; }
 

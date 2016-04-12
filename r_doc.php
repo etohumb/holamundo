@@ -14,7 +14,7 @@
 	$p_resp_at = $_POST["p_resp_at"];
 	$obs = $_POST["obs"];
 	$firma = $_POST["firma"];
-	$anho = $_POST["anho"];
+	$estado = $_POST["estado"];
 		
 
 	$mysqli = new mysqli ('localhost','root','','docu_drpuno');

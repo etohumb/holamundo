@@ -1,5 +1,9 @@
 <?php
-	echo '<html><head><title>REGISTRO DE DOCUMENTOS DR PUNO</title></head>	
+
+/*<link href="misestilos.css" rel="stylesheet" type="text/css">*/
+	echo '<html><head><title>REGISTRO DE DOCUMENTOS DR PUNO</title>
+	<link href="misestilos.css" rel="stylesheet" type="text/css">
+	</head>	
 	<body> ';
 	
 	
@@ -21,7 +25,7 @@
 	}
 	
 	echo '<p align=center>RELACION DE DOCUMENTOS RECIBIDOS DEL MES</p>';
-	echo '<table border=1><tr><td>
+	echo '<table border=1 cellspacing=0><tr><td>
 	Num Reg.</td><td>Fecha Recep.</td><td>Tipo Docum</td><td>Remitente</td><td>Num Folios</td><td>Asunto</td><td>Decreto</td><td>Resp Atencion</td><td>Observacion</td><td>Firma</td><td>H. Atencion
 	</td></tr>';	
 	

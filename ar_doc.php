@@ -14,7 +14,7 @@
 	$p_resp_at = $_POST["p_resp_at"];
 	$obs = $_POST["obs"];
 	//$firma = $_POST["firma"];
-	//$anho = $_POST["anho"];
+	$estado = $_POST["estado"];
 		
 
 	$mysqli = new mysqli ('localhost','root','','docu_drpuno');
@@ -28,7 +28,7 @@
 	}
 	
 	// INICIA - CREAR TABLA
-	$sql = "UPDATE reg_recep SET decreto, p_resp_at, obs 
+	$sql = "UPDATE reg_recep SET decreto, p_resp_at, obs, estado 
 	WHERE n_reg=" . $n_reg;
 	if (!$result = $mysqli->query($sql)){
 			// no se pudo insertar en la tabla
