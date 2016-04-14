@@ -7,10 +7,10 @@ table {
 	padding: 0.5px;
 	margin: 2;
 	font-family: Arial;/*Times new Roman; /*Verdana, Geneva, Arial, Helvetica, sans-serif;*/
-	font-size: 8pt;
+	font-size: 7pt;
 	color: blue;
 	background: white;
-	text-align: justify;
+	text-align: left;
 }
 
 body {
@@ -19,12 +19,22 @@ body {
 	font-size: 9pt;
 }
 
-/*
+
 input {
 	font-family: Arial Narrow;
-	font-size: 10pt;
+	font-size: 8pt;
 	height:23px;
+	padding: 0.5px;
 }
+
+legend {
+	font-size: 9pt;
+}
+
+select {
+	font-size: 9pt;
+}
+/*
 
 body {
 	color: black;
