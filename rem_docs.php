@@ -11,7 +11,7 @@
 	}
 	
 	// INICIA - CREAR TABLA
-	$sql = "CREATE TABLE IF NOT EXISTS reg_emi (id INT AUTO_INCREMENT, n_reg TEXT, fecha_emi TEXT, 
+	$sql = "CREATE TABLE IF NOT EXISTS reg_emi (id INT AUTO_INCREMENT, n_reg TEXT, fecha_emi DATETIME NOT NULL DEFAULT NOW(), 
 	n_folios TEXT, tipo_doc TEXT, nombre_dest TEXT, asunto TEXT, distrib TEXT, obs TEXT, 
 	firma TEXT, anho TEXT, PRIMARY KEY (id))";
 	if (!$result = $mysqli->query($sql)){

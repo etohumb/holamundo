@@ -11,7 +11,7 @@
 	}
 	
 	// INICIA - CREAR TABLA
-	$sql = "CREATE TABLE IF NOT EXISTS reg_recep (id INT AUTO_INCREMENT, n_reg TEXT, fecha_recep TEXT, 
+	$sql = "CREATE TABLE IF NOT EXISTS reg_recep (id INT AUTO_INCREMENT, n_reg TEXT, fecha_recep DATETIME NOT NULL DEFAULT NOW(), 
 	tipo_doc TEXT, nombre_rem TEXT, n_folios TEXT, asunto TEXT, decreto TEXT, p_resp_at TEXT, obs TEXT, 
 	firma TEXT, estado TEXT, PRIMARY KEY (id))";
 	if (!$result = $mysqli->query($sql)){
@@ -23,7 +23,7 @@
 	<link href="misestilos.css" rel="stylesheet" type="text/css"></head>	
 	<body bgcolor="#0055aa">';
 
-	echo '<table><tr><td>';
+	echo '<table align=left><tr><td>';
 	
 	echo '<form action="r_doc.php" method="POST" enctype="multipart/form-data">';
 	
@@ -46,7 +46,7 @@
 	 DECRETO : </br><textarea name="decreto" rows="2" cols="30"/></textarea></br>
 	 PERSONAL RESP ATENCION : <input type="text" name="p_resp_at" size="50"/></br>
 	 OBSERVACIONES : <input type="text" name="obs" size="50"/></br>
-	 FIRMA : <input type="text" name="firma" size="40"/>&nbsp &nbsp &nbsp
+	 FIRMA : <input type="text" name="firma" size="40"/>&nbsp
 	 ESTADO : <input type="text" name="estado" size="16" value="RECIBIDO"/></br>';
 	
 	echo '<input type="submit" name="enviar" value="RECIBIR..."/>';

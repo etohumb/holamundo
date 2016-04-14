@@ -7,15 +7,16 @@ table {
 	padding: 0.5px;
 	margin: 2;
 	font-family: Arial;/*Times new Roman; /*Verdana, Geneva, Arial, Helvetica, sans-serif;*/
-	font-size: 5pt;
-	color: black;
+	font-size: 8pt;
+	color: blue;
 	background: white;
 	text-align: justify;
 }
 
 body {
 	font-family: Arial;
-	font-color: blue;
+	color: blue;
+	font-size: 9pt;
 }
 
 /*
