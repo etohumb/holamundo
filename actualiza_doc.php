@@ -56,12 +56,7 @@
 	echo '</form>';
 
 	echo '
-	<script>
-		window.onload = function mifun() {
-			window.open("reporte.php", "up_right", 
-			"toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400")
-		}
-	</script>';
+	<a href="whatsapp://send?text=Hello%20World!">Hello, world!</a>';
 	
 	echo '</td></tr></table></body></html>';
 

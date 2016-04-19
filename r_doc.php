@@ -1,6 +1,6 @@
 <?php
 	
-	header("Location: recep_docs.php");
+	//header("Location: recep_docs.php");
 	
 	echo '<p><a href="recep_docs.php">REGRESAR</a></p>';
 	
@@ -30,8 +30,8 @@
 	// INICIA - CREAR TABLA
 	$sql = "INSERT INTO reg_recep (n_reg, fecha_recep, 
 	tipo_doc, nombre_rem, n_folios, asunto, decreto, p_resp_at, obs, 
-	firma, anho) VALUES ('$n_reg', '$fecha_recep', '$tipo_doc', '$nombre_rem', '$n_folios', '$asunto', 
-	'$decreto', '$p_resp_at', '$obs', '$firma', '$anho')";
+	firma, estado) VALUES ('$n_reg', '$fecha_recep', '$tipo_doc', '$nombre_rem', '$n_folios', '$asunto', 
+	'$decreto', '$p_resp_at', '$obs', '$firma', '$estado')";
 	if (!$result = $mysqli->query($sql)){
 			// no se pudo insertar en la tabla
 	}
