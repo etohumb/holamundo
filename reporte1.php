@@ -19,9 +19,9 @@
 	
 	
 	// INICIA - CONSULTA DOC RECIBIDOS
-	$sql = "SELECT * FROM reg_recep ORDER BY id ASC LIMIT 10,20";
+	$sql = "SELECT * FROM reg_recep"; // ORDER BY id ASC LIMIT 10,20";
 	if (!$result = $mysqli->query($sql)){
-			// no se pudo insertar en la tabla
+			echo ' no se pudo insertar en la tabla';
 	}
 	
 	echo '<p align=center>RELACION DE DOCUMENTOS RECIBIDOS DEL MES</p>';
@@ -31,6 +31,7 @@
 	
 	while ($resultados = $result->fetch_assoc()) {
 	
+	
 	//$n_reg2 = $resultados['n_reg'];
 	//$fecha_emi2 = $resultados['fecha_recep'];
 	//$tipo_doc2 = $resultados['tipo_doc'];
@@ -38,7 +39,7 @@
 
 
 	
-		echo '<tr><td>' . $resultados['n_reg'] . '</td><td>' . $resultados['fecha_recep'] . '</td><td>Tipo Docum</td><td>Remitente</td><td>Num Folios</td><td>Asunto</td><td>Decreto</td><td>Resp Atencion</td><td>Observacion</td><td>Firma</td><td>H. Atencion
+		echo '<tr><td>' . $resultados['n_reg'] . '</td><td>' . $resultados['fecha_recep'] . '</td><td>' . $tipo_doc . '</td><td>' . Remitente . '</td><td>Num Folios</td><td>Asunto</td><td>Decreto</td><td>Resp Atencion</td><td>Observacion</td><td>Firma</td><td>H. Atencion
 	</td></tr>';
 	
 	}
